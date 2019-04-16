@@ -1,0 +1,9 @@
+Kabuğundan, apt-get kullanarak Git'i yükle:
+
+$ sudo apt-get update
+$ sudo apt-get install git
+
+Yüklemenin başarılı olduğunu doğrulayın git --version:
+
+$ git --version
+git version 2.9.2

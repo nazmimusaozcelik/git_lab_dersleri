@@ -1,0 +1,50 @@
+ctrl + alt + t ile terminal açılır 
+önce root 'a girişi öğrenelim
+--su --> yaz entere bas parola ister parola girince yetkilendirme hatası verirse yeni şifre atamak gerekir
+bunun için --sudo passwd root -->entere bas şifreni belirle , sonra 
+--su yazıp entere basın parolayı girin ve root'a giriş sağlanır.
+root'tan çıkış için --exit komutu yeterlidir
+
+pwd --> bulunduğun dizini gösterir
+ls -->dosya ve klasör listeler
+cd ornek_dosya --> bulunduğu dizindeki ornek_dosya klasörüne gider
+cd .. --> bir geri (üst dizine) dizine geçer
+mkdir sahin --> sahin adında klasör oluşturur
+mv falcon sahin --> falcon klasörünü sahin e taşır
+------> pwd ile bulunduğun komuta bak tekrar cd yaparak /home/falcon dizinine geç
+cd Masaüstü --> Masaüstüne geçiş sağla
+echo "örnek metin">a.txt  --> enter bas...#masaüstüne içerisinde örnek metin yazan bir a.txt belgesi oluşturur
+cp a.txt sahin1 --> entere basınca sahin1 klasörüne (varsa) a.txt yi kopyalar
+rm a.txt --> dosya silinir
+rm -r sahin1 --> sahin1 ve içerisinde bulunan herşeyi tek komutta silmeye yarar
+cat a.txt --> a.txt nin içeriğini terminalde gösterir
+cat a.txt>b.txt --> a.txt nin kopyası b.txt olur
+clear --> terminal ekranınızı temizler
+date --> tarih verir
+du isim --> dosya veya dizinin boyutunu gösterir
+expr 3 + 5 --> matematiksel işlemler için kullanılır boşluklara dikkat edin ve sonuç 8 verir
+gzip a.txt --> zipleme yapar a.txt.gz olur
+gunzip a.txt.gz --> arşivi çıkarır 
+----birden fazla arşiv açmak için ise 
+gunzip *.*.gz --> tüm gz leri çıkarır
+tar -cf deneme.tar deneme.txt deneme2.txt --> masaüstündeysek var olan deneme1.txt ve deneme2.txt dosyalarını deneme.tar içerisinde birleştirir
+sort b.txt --> b.txt içindeki yazıları alt alta sıralayarak listeler
+cmp a.txt b.txt --> a nın b dosyasından farkını gösterir
+
+yeni kullanıcı oluşturmak için root olmak gerekir 
+su --> giriş yap
+useradd sahin2 --> enter
+(sahin2 kullanıcısı oluştur)
+
+find $home -print --> ev dizinindeki bütün dosyaları listeler
+
+find /home/falcon -name a.txt --> dosya varsa tam yolunu gösterir
+
+oluşturulan bir dosyayı açmak için 
+
+a.txt adında belge oluştur içerisine "ornek metin" yazın ve kaydedin
+
+terminal komutu ise 
+chmod u+x a.txt --> enter (belgeye yetki verir)
+./a.txt --> enter dosyayı gosterir
+ornek metin ..................
