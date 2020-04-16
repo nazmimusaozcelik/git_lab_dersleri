@@ -12,3 +12,6 @@ git version 2.9.2
 
 git dersleri status komutu deneme....
 
+
+
+Git poll scm denemesi için yazılan satır.
